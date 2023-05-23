@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        table.pequena {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+        }
+
+        tbody > tr:nth-child(2n) { /* 2n ou even = par // 2n - 1 ou odd = impar */
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        td.percent {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com tabelas</h1>
+    <h2>Tabela pequena (normal)</h2>
+    <table class="pequena">
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+
+    <h2>Tabela grande</h2>
+    <table>
+        <caption>Populacao das Unidades Federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Populacao</th>
+                <th scope="col" style="width: 50px;">Porcentagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45 919 049</td>
+                <td class="percent">21,9%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+                <td class="percent">10,1%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+                <td class="percent">8,2%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>84352783</strong></td>
+                <td class="percent"><strong>40.2%</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
