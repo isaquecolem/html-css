@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to left, #6FDEC2, #7DF7FA, #6FDE83);
+    background-attachment: fixed;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #32633b;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1#principal {
+    background-color: rgb(5, 85, 15);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(3, 61, 10);
+}
+
+h1, h2 {
+    color: rgb(5, 85, 15);
+    text-align: left;
+}
+
+p {
+    text-indent: 1em;
+    text-align: justify;
+}
+
+.primeiro {
+    color: rgb(0, 90, 23);
+}
+
+.destaque {
+    color: red;
+}
+
+.importante {
+    background-color: #c5c9c6;
+}
+
+#d1, #d2, #d3 {
+    display: inline-block;
+    background-color: #6FDE83;
+    border: 1px solid black;
+    text-align: center;
+    height: 180px;
+    width: 180px;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+}
+
+#d1:hover, #d2:hover, #d3:hover {
+    background-color: lightgreen;
+}
+
+#secreto {
+    font-size: 1.2em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color:rgb(5, 85, 15);
+}
+
+a:active {
+    color: black;
+}
+
+a::after {
+    content: ' [link]';
+    text-decoration: none;
+    color: darkgray;
+}
