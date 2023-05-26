@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas y Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        thead {
+            text-align: center;
+            color: white;
+            background-color: gray;
+            font-weight: bolder;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+
+        td.num {
+            text-align: center;
+        }
+
+        td.media {
+            color: white;
+            background-color: gray;
+            font-weight: bolder;
+        }
+
+        td.numMedia {
+            text-align: center;
+            color: white;
+            background-color: gray;
+            font-weight: bolder;
+        }
+
+        col.cArea {
+            background-color: rgb(230, 230, 230);
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelinha pae</h1>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cArea">
+                <col class="cDisciplinas">
+                <col class="cNotas" span="2">
+                <col class="cMedia">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2">Area</th>
+                    <th scope="col" rowspan="2">Disciplinas</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th scope="col" rowspan="2">Media</th>
+                </tr>
+                <tr>
+                    <th scope="col">Nota 1</th>
+                    <th scope="col">Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">Exatas</th>
+                    <td>Matematica</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Fisica</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Quimica</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td class="media" colspan="4">Media de Exatas</td>
+                    <td class="numMedia">0.0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Humanas</th>
+                    <td>Historia</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td class="media" colspan="4">Media de Humanas</td>
+                    <td class="numMedia">0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
