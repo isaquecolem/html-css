@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        iframe {
+            width: 97vw;
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha uma opcao:</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique neque facilis voluptatibus delectus voluptatem ex obcaecati vero unde! Amet neque reprehenderit sequi illo temporibus obcaecati fugit eveniet distinctio, soluta praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deleniti blanditiis esse, aliquid voluptas praesentium minus debitis natus, cumque totam veniam illum perferendis! Animi iure ut voluptatum mollitia saepe nemo.</p>
+
+    <ul>
+        <li><a href="../ex001/index.html" target="frame">Primeira Pagina</a></li>
+        <li><a href="../ex004/index.html" target="frame">Pagina Especial</a></li>
+        <li><a href="../ex006/cordel.html" target="frame">Pagina do Cordel</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae provident iusto exercitationem ipsa ab corrupti blanditiis voluptatum, modi, doloremque non aut accusamus ratione odit debitis velit ullam molestias distinctio inventore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequuntur. Molestiae velit maxime sint odit illum tempora, necessitatibus nisi, ab blanditiis consequuntur tempore fugiat iure? Suscipit voluptate mollitia placeat quod?</p>
+
+    <iframe srcdoc="<h2>O conteudo escolhido vai ser exibido aqui:</h2><img src='../ex005/img/target001.png'>" frameborder="0" name="frame"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro mollitia velit enim similique a doloremque incidunt vel quas provident quos magni, obcaecati soluta iusto sapiente blanditiis labore beatae facere laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit in illo vitae tenetur iste necessitatibus eius mollitia eos dolorum minus unde impedit dolor aliquid suscipit nulla, fuga at ipsam?</p>
+</body>
+</html>
