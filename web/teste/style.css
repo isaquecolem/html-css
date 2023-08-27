@@ -1,0 +1,15 @@
+.sidebar {
+    width: 60px;
+    height: 100%;
+    background-color: #222;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 1rem 0 0 1rem;
+    transition: width .75s ease;
+}
+
+.sidebar:hover{
+    width: 200px;
+}
